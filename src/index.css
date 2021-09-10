@@ -1,0 +1,90 @@
+html{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(128, 176, 248);
+}
+body{
+  background-color: rgb(128, 176, 248) !important;
+}
+.title {
+  text-align: center;
+  margin: 0.5em 0 0.5em 0 !important;
+	color: #000000;
+	font-weight: normal;
+	font-family: 'Jazz LET', fantasy;   
+	font-size: 18px;
+	line-height: 10px;
+}
+.game {
+  display: flex !important;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+.game-area {
+  background-color: rgb(60, 255, 119);
+    position: relative;
+    margin: 13px 0 30px 5px;
+    width: 600px;
+    height: 600px;
+    border: 12px solid rgb(58, 58, 58);
+    
+  }
+.score {
+  color: #000;
+  text-align: center;
+  margin: 50px 0 30px 30px;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+}
+  
+  .snake-dot {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: rgb(146, 35, 190);
+    border-radius: 5px;
+    z-index: 2;
+  }
+  .obstacle {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background-color: #000;
+    z-index: 2;
+  }
+
+  .snake-food {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    background: red;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 1em 0 !important;
+  border-radius:2em !important;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color: #000;
+  background-color:rgb(60, 255, 119);
+  text-align:center;
+  transition: all 0.2s;
+
+  }
+  button:hover{
+   background-color:#40c640;
+  }
+  #logo{
+    margin: 0 0 0 15px;
+    height: 35px;
+    width: 40px;
+  }
