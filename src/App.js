@@ -162,7 +162,7 @@ class App extends Component {
   }
 
   onGameOver() {
-    alert(`Game Over. Snake length is ${this.state.snakeDots.length}`);
+    alert(`Game Over. Your Score is ${this.state.snakeDots.length-3}`);
     this.setState(initialState)
   }
   getdir(){
