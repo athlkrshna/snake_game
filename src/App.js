@@ -31,8 +31,8 @@ const initialState = {
 
   ],
   obstacles2: [
-    [30,20],[30,22],[30,24],[30,26],[30,28],[30,30],[30,32],[30,34],[30,36],[30,38],[30,40],[30,42],[30,44],[30,46],[30,48],[30,50],[30,52],[30,54],[30,56],[30,58],[30,60],
-    [70,20],[70,22],[70,24],[70,26],[70,28],[70,30],[70,32],[70,34],[70,36],[70,38],[70,40],[70,42],[70,44],[70,46],[70,48],[70,50],[70,52],[70,54],[70,56],[70,58],[70,60]
+    [30,20],[32,20],[34,20],[36,20],[38,20],[40,20],[42,20],[44,20],[46,20],[48,20],[50,20],[30,20],[30,22],[30,24],[30,26],[30,28],[30,30],[30,32],[30,34],[30,36],[30,38],[30,40],
+    [52,70],[54,70],[56,70],[58,70],[60,70],[62,70],[64,70],[66,70],[68,70],[70,70],[70,50],[70,52],[70,54],[70,56],[70,58],[70,60],[70,62],[70,64],[70,66],[70,68],[70,70]
 
   ],
   obstacles3: []
@@ -210,13 +210,13 @@ class App extends Component {
           <button onClick= {() =>this.startgame()}>START|PAUSE</button>
           <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Select Level
+            LEVEL 0
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item onClick = {() =>this.selectpattern3()}>No Pattern</Dropdown.Item>
-            <Dropdown.Item onClick= {() =>this.selectpattern()}>Pattern 1</Dropdown.Item>
-            <Dropdown.Item  onClick= {() =>this.selectpattern2()}>Pattern 2</Dropdown.Item>
+            <Dropdown.Item onClick = {() =>this.selectpattern3()}>LEVEL 0</Dropdown.Item>
+            <Dropdown.Item onClick= {() =>this.selectpattern()}>LEVEL 1</Dropdown.Item>
+            <Dropdown.Item  onClick= {() =>this.selectpattern2()}>LEVEL 2</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         </div>
